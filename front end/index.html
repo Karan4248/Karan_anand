@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan Anand</title>
+    <meta name="description" content="Karan Anand - Computer Science student at the University of Manitoba, building web projects with HTML, CSS, JavaScript, Java, and FastAPI.">
+    <meta property="og:title" content="Karan Anand">
+    <meta property="og:description" content="Computer Science student building web projects with HTML, CSS, JavaScript, Java, and FastAPI.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="photo.jpg">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,8 +17,10 @@
 </head>
 <body>
     <nav class="site-nav">
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
         <a href="index.html" class="nav-link active">Home</a>
         <a href="projects.html" class="nav-link">Projects</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
         <a href="index.html#contact" class="nav-link">Contact</a>
     </nav>
     <header>
@@ -31,14 +39,28 @@
                 solving problems in code.
             </p>
         </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">Java</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Stripe Integration</span>
+                <span class="tag">API Integration</span>
+            </div>
+        </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-            <p><a href="https://github.com/yourusername">GitHub</a> | <a href="https://linkedin.com/in/yourusername">LinkedIn</a></p>
+            <p>Email: <a href="mailto:karan.a4248@gmail.com">karan.a4248@gmail.com</a></p>
+            <p><a href="https://github.com/Karan4248">GitHub</a> | <a href="https://www.linkedin.com/in/karan-anand-19bbb81b3/">LinkedIn</a></p>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Karan Anand. All rights reserved.</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>

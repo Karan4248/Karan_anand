@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects &middot; Karan Anand</title>
+    <meta name="description" content="A selection of projects built by Karan Anand, including an AI resume builder and this portfolio site.">
+    <meta property="og:title" content="Projects &middot; Karan Anand">
+    <meta property="og:description" content="A selection of projects built by Karan Anand.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -11,13 +16,16 @@
 </head>
 <body>
     <nav class="site-nav">
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
         <a href="index.html" class="nav-link">Home</a>
         <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
         <a href="index.html#contact" class="nav-link">Contact</a>
     </nav>
     <header class="page-header">
         <div class="header-text">
             <p class="eyebrow">Selected Work</p>
+            
             <h1>Projects</h1>
             <p class="tagline">A few things I've built while learning to code.</p>
         </div>
@@ -29,11 +37,19 @@
                     <div class="project-thumb">AR</div>
                     <h3>AI Resume Builder</h3>
                     <p>A web app that generates tailored resumes.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">OpenAI API</span>
+                    </div>
                 </div>
                 <div class="project-card">
                     <div class="project-thumb">PP</div>
                     <h3>Personal Portfolio</h3>
                     <p>This site, built from scratch with HTML and CSS.</p>
+                    <div class="project-card__tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -41,5 +57,6 @@
     <footer>
         <p>&copy; 2026 Karan Anand. All rights reserved.</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>

@@ -48,6 +48,40 @@ header, main, footer {
     border-bottom: 1px solid var(--fg);
 }
 
+/* Hidden by default (desktop) -- only shown on narrow screens below */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--fg);
+    font-size: 1.25rem;
+    line-height: 1;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Mobile nav: show the hamburger, hide links until script.js adds .site-nav--open */
+@media (max-width: 600px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .site-nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-link {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-nav--open .nav-link {
+        display: block;
+    }
+}
+
 header {
     display: flex;
     align-items: center;
@@ -121,12 +155,30 @@ p {
     border: 1px solid var(--border);
     padding: 20px;
     border-radius: 12px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-4px) scale(1.05);
     border-color: var(--fg);
+    box-shadow: 0 12px 24px rgba(255, 255, 255, 0.08);
+    z-index: 1;
+}
+
+.project-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.tag {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 4px 10px;
 }
 
 .project-thumb {
@@ -171,4 +223,11 @@ a {
 
 a:hover {
     border-color: var(--fg);
+}
+
+/* Visible outline when tabbing with a keyboard (not shown on mouse click) */
+a:focus-visible,
+.nav-toggle:focus-visible {
+    outline: 2px solid var(--fg);
+    outline-offset: 2px;
 }
