@@ -211,6 +211,19 @@ p {
     margin: 0;
 }
 
+.project-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 14px;
+}
+
+.project-card__source {
+    display: inline-block;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+}
+
 footer {
     text-align: center;
     color: var(--muted);
