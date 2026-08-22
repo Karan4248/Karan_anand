@@ -11,6 +11,7 @@ function Nav() {
       <button
         className="nav-toggle"
         aria-label="Toggle menu"
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
       >
         &#9776;
@@ -21,10 +22,10 @@ function Nav() {
       <NavLink to="/projects" className={linkClass} onClick={() => setIsOpen(false)}>
         Projects
       </NavLink>
-      <a href="/#skills" className="nav-link" onClick={() => setIsOpen(false)}>
+      <a href={`${import.meta.env.BASE_URL}#skills`} className="nav-link" onClick={() => setIsOpen(false)}>
         Skills
       </a>
-      <a href="/#contact" className="nav-link" onClick={() => setIsOpen(false)}>
+      <a href={`${import.meta.env.BASE_URL}#contact`} className="nav-link" onClick={() => setIsOpen(false)}>
         Contact
       </a>
     </nav>

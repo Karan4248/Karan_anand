@@ -1,20 +1,19 @@
+import PageHeader from '../components/PageHeader.jsx'
+
 function Home() {
   return (
     <>
-      <header>
-        <div className="header-text">
-          <p className="eyebrow">Computer Science &middot; University of Manitoba, Winnipeg</p>
-          <h1>Karan Anand</h1>
-          <p className="tagline">
-            I use excellent solutions to solve problems in record time, without sacrificing quality.
-          </p>
-        </div>
+      <PageHeader
+        eyebrow="Computer Science · University of Manitoba, Winnipeg"
+        title="Karan Anand"
+        tagline="I use excellent solutions to solve problems in record time, without sacrificing quality."
+      >
         <img
           src={`${import.meta.env.BASE_URL}photo.jpg`}
           alt="Photo of Karan Anand"
           className="profile-photo"
         />
-      </header>
+      </PageHeader>
       <main>
         <section id="about">
           <h2>About Me</h2>
