@@ -37,6 +37,6 @@ export const projects = [
     title: 'Personal Portfolio',
     description: 'This site, built from scratch with React.',
     tags: ['React', 'JavaScript', 'CSS'],
-    sourceUrl: 'https://github.com/Karan4248/Karan_anand',
+    sourceUrl: 'https://github.com/Karan4248/Portfolio',
   },
 ]
