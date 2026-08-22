@@ -1,4 +1,6 @@
 import PageHeader from '../components/PageHeader.jsx'
+import { experience } from '../data/experience.js'
+import { skillGroups } from '../data/skills.js'
 
 function Home() {
   return (
@@ -23,18 +25,43 @@ function Home() {
             solving problems in code.
           </p>
         </section>
+        <section id="experience">
+          <h2>Experience</h2>
+          <div className="experience-list">
+            {experience.map((item) => (
+              <div className="experience-item" key={item.id}>
+                <div className="experience-item__header">
+                  <h3>{item.title}</h3>
+                  <p className="experience-item__meta">
+                    {item.type} · {item.period}
+                  </p>
+                </div>
+                <p>{item.description}</p>
+                <div className="project-card__tags">
+                  {item.tags.map((tag) => (
+                    <span className="tag" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
         <section id="skills">
           <h2>Skills</h2>
-          <div className="project-card__tags">
-            <span className="tag">HTML</span>
-            <span className="tag">CSS</span>
-            <span className="tag">Java</span>
-            <span className="tag">JavaScript</span>
-            <span className="tag">FastAPI</span>
-            <span className="tag">Supabase</span>
-            <span className="tag">Stripe Integration</span>
-            <span className="tag">API Integration</span>
-          </div>
+          {skillGroups.map((group) => (
+            <div className="skill-group" key={group.category}>
+              <h3>{group.category}</h3>
+              <div className="project-card__tags">
+                {group.items.map((item) => (
+                  <span className="tag" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </section>
         <section id="contact">
           <h2>Contact</h2>

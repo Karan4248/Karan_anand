@@ -136,6 +136,58 @@ h1 {
     margin: 16px 0 0 0;
 }
 
+.experience-item {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.experience-item__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.experience-item h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.experience-item__meta {
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.experience-item p {
+    margin: 8px 0 0 0;
+}
+
+.skill-group {
+    margin-top: 24px;
+}
+
+.skill-group:first-of-type {
+    margin-top: 0;
+}
+
+.skill-group h3 {
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin: 0 0 10px 0;
+}
+
 h2 {
     font-size: 1.5rem;
     font-weight: 700;
