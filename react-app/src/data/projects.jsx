@@ -15,10 +15,10 @@ export const projects = [
     sourceUrl: 'https://github.com/Karan4248/Exercise-Tracker',
   },
   {
-    id: 'ai-resume-builder',
+    id: 'staged',
     icon: ResumeBuilderIcon,
-    title: 'AI Resume Builder',
-    description: 'A resume editor with live preview and PDF export, plus Claude-powered bullet polish, summary generation, and job-description optimization.',
+    title: 'Staged',
+    description: 'An AI-powered resume builder — co-founded and built. Live preview, PDF export, Claude-powered bullet polish, summary generation, job-description optimization, and Stripe subscription billing.',
     tags: ['TypeScript', 'Supabase', 'Stripe', 'Claude API'],
     sourceUrl: 'https://github.com/Karan4248/resume-builder',
     liveUrl: 'https://resume-builder-drab-sigma.vercel.app',

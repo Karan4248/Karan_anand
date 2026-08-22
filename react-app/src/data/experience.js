@@ -9,12 +9,12 @@ export const experience = [
     tags: ['Java', 'Spring Boot', 'JavaScript'],
   },
   {
-    id: 'ai-resume-builder',
-    title: 'AI Resume Builder',
-    type: 'Independent Project',
+    id: 'staged',
+    title: 'Staged',
+    type: 'Co-Founder & Developer',
     period: 'Apr – Jun 2026',
     description:
-      'Built a full-stack resume editor with live preview, PDF export, and Claude-powered content generation, deployed live on Vercel.',
+      'Co-founded and built Staged, an AI-powered resume builder with live preview, PDF export, and Claude-powered content generation. Handled full-stack development and Stripe-based subscription billing; ran an Instagram page for user acquisition.',
     tags: ['TypeScript', 'Supabase', 'Stripe', 'Claude API'],
   },
   {
