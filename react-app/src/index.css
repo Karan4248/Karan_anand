@@ -103,9 +103,13 @@ header {
     flex-shrink: 0;
 }
 
-main {
+header, main {
     max-width: 900px;
     margin: 0 auto;
+}
+
+main > section:first-child h2 {
+    margin-top: 0;
 }
 
 .eyebrow {
@@ -230,4 +234,12 @@ a:focus-visible,
 .nav-toggle:focus-visible {
     outline: 2px solid var(--fg);
     outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
 }
