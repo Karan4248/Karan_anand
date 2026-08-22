@@ -27,8 +27,8 @@ export const projects = [
     id: 'food-ordering',
     icon: FoodOrderingIcon,
     title: 'Food Ordering System',
-    description: 'A group project food ordering app built with Spring Boot — contributed the domain model and cart.',
-    tags: ['Java', 'Spring Boot', 'JavaScript'],
+    description: 'A group project food ordering app — contributed the domain model and cart.',
+    tags: ['Java', 'JavaScript'],
     sourceUrl: 'https://github.com/minhkhoily29/Food-Ordering-System',
   },
   {

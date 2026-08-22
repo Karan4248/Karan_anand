@@ -5,8 +5,8 @@ export const experience = [
     type: 'Group Project',
     period: 'May – Jun 2026',
     description:
-      'Collaborated on a team-built food ordering platform using Spring Boot; contributed the domain model and shopping cart logic.',
-    tags: ['Java', 'Spring Boot', 'JavaScript'],
+      'Collaborated on a team-built food ordering platform; contributed the domain model and shopping cart logic.',
+    tags: ['Java', 'JavaScript'],
   },
   {
     id: 'staged',
